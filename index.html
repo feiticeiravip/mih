@@ -722,7 +722,7 @@
             function shareOnWhatsApp(banca, drawTime, palpites) {
                 console.log(`shareOnWhatsApp: banca=${banca}, drawTime=${drawTime}`);
                 try {
-                    const message = `Palpites para ${banca} - ${drawTime}:\n${palpites.map(p => `${p.milhar} - ${p.animal}`).join('\n')}\n\nACESSE O SITE:\nhttps://reidamilhar.com/`;
+                    const message = `Palpites para ${banca} - ${drawTime}:\n${palpites.map(p => `${p.milhar} - ${p.animal}`).join('\n')}\n\nACESSE O SITE:\nhttps://bet.acertosclub.com/`;
                     const encodedMessage = encodeURIComponent(message);
                     window.open(`https://api.whatsapp.com/send?text=${encodedMessage}`, '_blank');
                 } catch (e) {
